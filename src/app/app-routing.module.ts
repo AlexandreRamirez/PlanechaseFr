@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-
+import { SwipeCardLibModule } from 'ng-swipe-card';
 const routes: Routes = [
   {
     path: 'home',
@@ -15,6 +15,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
+    SwipeCardLibModule,
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
   ],
   exports: [RouterModule]

@@ -7,11 +7,14 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 
 
+import { SwipeCardLibModule } from 'ng-swipe-card';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    SwipeCardLibModule,
     HomePageRoutingModule
   ],
   declarations: [HomePage]
